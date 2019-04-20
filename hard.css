@@ -1,0 +1,28 @@
+.img-box {
+	column-count: 4;
+	column-gap: 0;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.image {
+	display: block;
+	max-width: calc(100% - 3px);
+	margin: 3px;
+}
+
+.image-wrapper {
+	display: block;
+	opacity: 0.8;
+	transition: 0.4s;
+	/*filter: blur(1.1px);*/
+}
+
+.image-wrapper:hover {
+	opacity: 1;
+	filter: invert(100%);
+}
+
+.image-wrapper + .image-wrapper {
+	margin: 3px 0;
+}
